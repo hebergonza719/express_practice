@@ -4,11 +4,12 @@
   "description": "Simple Knowledgebase app\u001b[D",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "nodemon node app"
   },
   "author": "Heber Gonzalez",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
   }
 }
