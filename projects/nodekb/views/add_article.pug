@@ -3,3 +3,15 @@ extends layout
 block content
     //- if we want to add a variable we use #{}
     h1 #{title}
+    //- this submits the form info
+    form(method='post', action='/articles/add')
+      #from-group 
+        label Title:
+        input.form-control(name='title', type='text')
+      #from-group 
+        label Author:
+        input.form-control(name='author', type='text')
+      #from-group 
+        label Body:
+        input.form-control(name='body')
+      input.btn.btn-primary(type='submit', value='Submit')
